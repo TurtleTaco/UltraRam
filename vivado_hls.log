@@ -1,0 +1,93 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2017.1
+  Build 1846317 on Fri Apr 14 19:19:38 MDT 2017
+  Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
+================================================================
+INFO: [HLS 200-10] Running '/home/linsun/Xilinx/Vivado_HLS/2017.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'linsun' on host 'PC' (Linux_x86_64 version 4.4.0-98-generic) on Mon Nov 13 15:34:27 EST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/linsun/XilinxLab/uram'
+INFO: [HLS 200-10] Opening project '/home/linsun/XilinxLab/uram/proj_sum_io'.
+INFO: [HLS 200-10] Adding design file 'sum_io.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/linsun/XilinxLab/uram/proj_sum_io/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-fsgd2104-3-e-es1'
+INFO: [HLS 200-10] Analyzing design file 'sum_io.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 348.105 ; gain = 12.586 ; free physical = 1494 ; free virtual = 12107
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 348.105 ; gain = 12.586 ; free physical = 1490 ; free virtual = 12105
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<169, 116, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<1, 64, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<1, 64, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<169, 116, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 721.867 ; gain = 386.348 ; free physical = 1112 ; free virtual = 11819
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:438) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:473) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' into 'hls::cast_IEEE754<long, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::cast_IEEE754<long, double>' into '__hls_fptosi_double_i64' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i64' into 'sum_io' (sum_io.cpp:40) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 905.277 ; gain = 569.758 ; free physical = 901 ; free virtual = 11659
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:438) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:473) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::cast_IEEE754<long, (ap_q_mode)6, double>' into 'hls::cast_IEEE754<long, double>' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::cast_IEEE754<long, double>' into '__hls_fptosi_double_i64' (/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i64' into 'sum_io' (sum_io.cpp:40) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:40 ; elapsed = 00:00:26 . Memory (MB): peak = 1163.707 ; gain = 828.188 ; free physical = 532 ; free virtual = 11420
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:43 ; elapsed = 00:00:28 . Memory (MB): peak = 1177.457 ; gain = 841.938 ; free physical = 350 ; free virtual = 11280
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sum_io' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'sum_io' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.21 seconds; current allocated memory: 747.050 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'empty' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'empty_6' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 747.401 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sum_io' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on function 'sum_io' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sum_io_dmul_64ns_64ns_64_9_max_dsp' to 'sum_io_dmul_64ns_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sum_io_sitodp_32s_64_6' to 'sum_io_sitodp_32scud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sum_io_dmul_64ns_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sum_io_sitodp_32scud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sum_io'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 747.958 MB.
+INFO: [RTMG 210-278] Implementing memory 'sum_io_empty_ram' using uram RAMs.
+INFO: [RTMG 210-278] Implementing memory 'sum_io_empty_6_ram' using uram RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 1177.457 ; gain = 841.938 ; free physical = 309 ; free virtual = 11265
+INFO: [SYSC 207-301] Generating SystemC RTL for sum_io.
+INFO: [VHDL 208-304] Generating VHDL RTL for sum_io.
+INFO: [VLOG 209-307] Generating Verilog RTL for sum_io.
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linsun/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'sum_io_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sum_io_ap_sitodp_4_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sum_io_ap_sitodp_4_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'sum_io_ap_dmul_7_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sum_io_ap_dmul_7_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sum_io_ap_dmul_7_max_dsp_64'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linsun/Xilinx/Vivado/2017.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 15:35:26 2017...
+INFO: [HLS 200-112] Total elapsed time: 86.13 seconds; peak allocated memory: 747.958 MB.

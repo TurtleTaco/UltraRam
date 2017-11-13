@@ -1,0 +1,160 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sum_io'" level="0">
+<item name = "Date">Mon Nov 13 15:34:56 2017
+</item>
+<item name = "Version">2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)</item>
+<item name = "Project">proj_sum_io</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-fsgd2104-3-e-es1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">4.00</item>
+<item name = "Clock uncertainty (ns)">0.50</item>
+<item name = "Estimated clock period (ns)">3.46</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">400002, 400002, 400003, 400003, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">20000, 20000, 1, -, -, 20000, no</column>
+<column name="- Loop 2">380000, 380000, 19, -, -, 20000, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 522, 1086, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 11, 828, 695, -</column>
+<column name="Memory">0, -, 10, 0, 10</column>
+<column name="Multiplexer">-, -, -, 162, -</column>
+<column name="Register">-, -, 265, -, -</column>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="sum_io_dmul_64ns_bkb_U1">sum_io_dmul_64ns_bkb, 0, 11, 416, 227</column>
+<column name="sum_io_sitodp_32scud_U2">sum_io_sitodp_32scud, 0, 0, 412, 468</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="empty_U">sum_io_empty, 0, 4, 0, 20000, 4, 1, 80000</column>
+<column name="empty_6_U">sum_io_empty_6, 0, 6, 0, 20000, 6, 1, 120000</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_1_fu_163_p2">+, 0, 0, 22, 15, 1</column>
+<column name="iterator_1_fu_181_p2">+, 0, 0, 22, 15, 1</column>
+<column name="sh_assign_fu_254_p2">+, 0, 0, 19, 11, 12</column>
+<column name="tmp_3_fu_201_p2">+, 0, 0, 15, 7, 7</column>
+<column name="tmp_9_i_i_i_fu_344_p2">-, 0, 0, 71, 1, 64</column>
+<column name="tmp_i_i_i_fu_268_p2">-, 0, 0, 18, 10, 11</column>
+<column name="exitcond2_fu_157_p2">icmp, 0, 0, 8, 15, 15</column>
+<column name="exitcond_fu_175_p2">icmp, 0, 0, 8, 15, 15</column>
+<column name="tmp_2_i_i_i_fu_298_p2">lshr, 0, 143, 162, 54, 54</column>
+<column name="p_Val2_3_fu_332_p3">select, 0, 0, 63, 1, 63</column>
+<column name="p_Val2_s_fu_350_p3">select, 0, 0, 64, 1, 64</column>
+<column name="sh_assign_1_fu_278_p3">select, 0, 0, 12, 1, 12</column>
+<column name="tmp_4_i_i_i_fu_304_p2">shl, 0, 379, 602, 169, 169</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">105, 22, 1, 22</column>
+<column name="empty_6_address0">15, 3, 15, 45</column>
+<column name="empty_address0">15, 3, 15, 45</column>
+<column name="i_reg_116">9, 2, 15, 30</column>
+<column name="iterator_reg_127">9, 2, 15, 30</column>
+<column name="sum_reg_138">9, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">21, 0, 21, 0</column>
+<column name="i_reg_116">15, 0, 15, 0</column>
+<column name="iterator_1_reg_369">15, 0, 15, 0</column>
+<column name="iterator_reg_127">15, 0, 15, 0</column>
+<column name="sum_reg_138">64, 0, 64, 0</column>
+<column name="tmp_3_reg_384">7, 0, 7, 0</column>
+<column name="tmp_4_reg_394">64, 0, 64, 0</column>
+<column name="x_assign_reg_399">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sum_io, return value</column>
+<column name="ap_return">out, 64, ap_ctrl_hs, sum_io, return value</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">3.46</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'val', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:475->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:436->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">bitcast, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'loc.V', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:477->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:479->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:436->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">partselect, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_i_i_i_i_cast1', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:502->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">zext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sh', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:502->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">add, 1.00, 1.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sh', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">select, 0.07, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sh_assign_1_cast', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">sext, 0.00, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_1_i_i_i_cast', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">zext, 0.00, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_2_i_i_i', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">lshr, 0.00, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_9', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:444->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">bitselect, 0.00, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_5', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:444->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">zext, 0.00, 1.07, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Val2__', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:441->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">select, 1.03, 2.11, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_3_i_i_i', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:472->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">zext, 0.00, 2.11, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_9_i_i_i', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:473->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">sub, 1.28, 3.39, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Val2__', /wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:473->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/hls/hls_round.h:523->/wrk/2017.1/nightly/2017_04_14_1846317/src/products/hls/hls_lib/src/lib_floatconversion.cpp:48->sum_io.cpp:40">select, 0.07, 3.46, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

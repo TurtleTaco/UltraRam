@@ -1,0 +1,25 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="proj_sum_io"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xcvu9p:-fsgd2104:-3-e-es1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
+        <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="4"/>
+    </clockList>
+    <config>
+        <schedule model="sum_io"/>
+    </config>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="" vendor="" library="" version="1.0" driver_input_dir="" display_name="" taxonomy=""/>
+    </ExportDesign>
+</AutoPilot:solution>
+

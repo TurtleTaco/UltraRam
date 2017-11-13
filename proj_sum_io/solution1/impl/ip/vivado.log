@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Nov 13 15:34:57 2017
+# Process ID: 6240
+# Current directory: /home/linsun/XilinxLab/uram/proj_sum_io/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/linsun/XilinxLab/uram/proj_sum_io/solution1/impl/ip/vivado.log
+# Journal file: /home/linsun/XilinxLab/uram/proj_sum_io/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linsun/Xilinx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'sum_io_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sum_io_ap_sitodp_4_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sum_io_ap_sitodp_4_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'sum_io_ap_dmul_7_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sum_io_ap_dmul_7_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sum_io_ap_dmul_7_max_dsp_64'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/linsun/Xilinx/Vivado/2017.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 15:35:26 2017...
